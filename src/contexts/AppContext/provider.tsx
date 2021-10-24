@@ -57,7 +57,7 @@ const AppProvider = (props: any) => {
 const useApp = (): ContextType => {
   const context = useContext(AppContext);
   if (context === undefined) {
-    throw new Error('useCount must be used within a CountProvider');
+    throw new Error('useApp must be used within a AppProvider');
   }
   return context;
 };
