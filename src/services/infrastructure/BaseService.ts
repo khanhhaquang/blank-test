@@ -1,7 +1,8 @@
-import { BaseStore } from "./BaseStore";
+import { BaseStore } from './BaseStore';
 
 export class BaseService<T> extends BaseStore<T> {
-    constructor(initialState: T) {
-        super(initialState)        
-    }
+  // eslint-disable-next-line @typescript-eslint/no-useless-constructor
+  constructor(initialState: T) {
+    super(initialState);
+  }
 }

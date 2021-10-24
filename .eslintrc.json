@@ -1,0 +1,6 @@
+{
+  "extends": ["@khanhhaquang/eslint-config-ken"],
+  "rules": {
+    "@typescript-eslint/comma-dangle": 0
+  }
+}

@@ -1,9 +1,12 @@
-import AppState from './context/background/AppState';
+import { AppProvider } from 'contexts/AppContext';
+import { Home } from './screens';
 
 const App = () => {
-	return <AppState>
-
-  </AppState>;
+  return (
+    <AppProvider>
+      <Home />
+    </AppProvider>
+  );
 };
 
 export default App;
