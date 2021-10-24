@@ -69,4 +69,4 @@ class TransactionsService extends BaseService<ITransactionsServiceState> {
   }
 }
 
-export default TransactionsService;
+export default new TransactionsService({ transactions: [] });

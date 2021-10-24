@@ -36,8 +36,7 @@ export const WithdrawSection: React.FC<TProps> = ({
     if (!amount || +amount > balance) return setAmountError('Invalid amount');
 
     setIsLoading(true);
-    const transactionService = new TransactionsService({ transactions: [] });
-    const data = await transactionService.addTransaction({
+    const data = await TransactionsService.addTransaction({
       id: state.transactions.length + 1,
       from: YOUR_ADDRESS,
       to: recipient,

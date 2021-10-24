@@ -7,11 +7,7 @@ const useFetchTransactions = () => {
   const [isLoading, setLoading] = useState<boolean>(false);
   const fetchList = async () => {
     setLoading(true);
-    const transactionService = new TransactionsService({
-      transactions: []
-    });
-
-    const data = await transactionService.getListOfTransactions();
+    const data = await TransactionsService.getListOfTransactions();
     if (data) {
       setState({
         transactions: data
